@@ -1,3 +1,5 @@
+import HeroImage from "./components/HeroImage";
+import MobileNav from "./components/MobileNav";
 import "./globals.css";
 
 export const metadata = {
@@ -8,10 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-sans bg-gray-lightest text-gray-dark text-primary ">
-        <h1 className="text-primary-default">English courses</h1>
-
-        <div className="hidden bg-primary bg-accent"></div>
+      <body className="font-sans h-[5000px]">
+        <MobileNav />
 
         {children}
       </body>
