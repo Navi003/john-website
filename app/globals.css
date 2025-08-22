@@ -14,3 +14,24 @@
   --color-accent: #00bfa6;
   --color-accent-hover: #00a28c;
 }
+.hero-container {
+  position: relative;
+  display: inline-block; /* keeps box aligned with image */
+  width: 100%; /* responsive */
+  max-width: 100%; /* adjust as needed */
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.rating-box {
+  position: absolute;
+  bottom: 5px; /* distance from bottom */
+  right: 3.5rem; /* distance from right */
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 3rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
