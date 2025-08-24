@@ -3,8 +3,9 @@ import React from "react";
 import HeadingTer from "./HeadingTer";
 import students from "@/Images/students.jpg";
 import Image from "next/image";
+import ResponsiveContainer from "./ResponsiveContainer";
 
-const experience = [
+export const experience = [
   {
     text: "Dual Master’s Degrees in English Literature and Education",
     id: "1",
@@ -23,38 +24,44 @@ const experience = [
 
 export default function AboutMeSection() {
   return (
-    <section className="mx-10">
-      <p className="mt-10 text-[.8rem]">
-        With two master’s degrees and over a decade of experience, I’ve had the
-        privilege of teaching English and Hindi to a wide range of learners
-        across Austria and other European countries — from teenagers preparing
-        for high-school exams (Matura) to international executives delivering
-        global presentations or attending meetings with confidence{" "}
-        <span>
-          <Link
-            className="text-primary underline cursor-pointer"
-            href="about-me"
-          >
-            Read More...
-          </Link>
-        </span>
-      </p>
-      <div>
-        <HeadingTer>What Sets Me Apart</HeadingTer>
-        <ul className="mt-4">
-          {experience.map((exp, id) => {
-            return <li key={id}>✅{exp.text}</li>;
-          })}
-        </ul>
-      </div>
-      <div className="mt-4">
-        <Image
-          width={1200}
-          height={1200}
-          src={students}
-          alt="Apurva lambha with stundets"
-        ></Image>
-      </div>
-    </section>
+    <ResponsiveContainer>
+      <section className="mx-10 xl:mx-0">
+        <p className="mt-10 text-[.8rem] lg:text-2xl">
+          With two master’s degrees and over a decade of experience, I’ve had
+          the privilege of teaching English and Hindi to a wide range of
+          learners across Austria and other European countries — from teenagers
+          preparing for high-school exams (Matura) to international executives
+          delivering global presentations or attending meetings with confidence{" "}
+          <span>
+            <Link
+              className="text-primary underline cursor-pointer"
+              href="about-me"
+            >
+              Read More...
+            </Link>
+          </span>
+        </p>
+        <div>
+          <HeadingTer>What Sets Me Apart</HeadingTer>
+          <ul className="mt-4 lg:mt-10">
+            {experience.map((exp, id) => {
+              return (
+                <li className="lg:text-xl" key={id}>
+                  ✅{exp.text}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="mt-4">
+          <Image
+            width={1200}
+            height={1200}
+            src={students}
+            alt="Apurva lambha with stundets"
+          ></Image>
+        </div>
+      </section>
+    </ResponsiveContainer>
   );
 }

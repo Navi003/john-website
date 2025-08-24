@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="font-sans">
         <MobileNav />
-
         {children}
+
         <Footer />
       </body>
     </html>
