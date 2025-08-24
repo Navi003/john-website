@@ -8,17 +8,21 @@ export default function page() {
     <ResponsiveContainer>
       <div className="mx-10 xl:mx-0">
         <div>
-          <HeadingTer className=" mb-10">English Courses</HeadingTer>
+          <HeadingTer className=" mb-10 md:text-2xl">
+            English Courses
+          </HeadingTer>
         </div>
-        <div className="grid grid-cols-1 gap-3.5">
+        <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2">
           <Course />
           <Course />
           <Course />
           <Course />
         </div>
         <div>
-          <HeadingTer className="mb-10 mt-10">Hindi Courses</HeadingTer>
-          <div className="grid grid-cols-1 gap-3.5">
+          <HeadingTer className="mb-10 mt-10 md:text-2xl">
+            Hindi Courses
+          </HeadingTer>
+          <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2">
             <Course />
             <Course />
             <Course />
