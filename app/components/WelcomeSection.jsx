@@ -19,7 +19,7 @@ export default function WelcomeSection() {
         </p>
         <div className="mt-11">
           <h3 className="mb-3.5 lg:text-2xl font-bold">WHAT I OFFER</h3>
-          <div className="grid grid-cols-2 gap-2 md:grid-cols-4 ">
+          <div className="grid grid-cols-2 gap-2 lg:gap-4 md:grid-cols-4 ">
             <OfferBox>
               Preparation for the English Matura or exams like IELTS, TOEFL,
               Cambridge etc.
