@@ -13,20 +13,20 @@ export default function page() {
           </HeadingTer>
         </div>
         <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2">
-          <Course />
-          <Course />
-          <Course />
-          <Course />
+          <Course slug="1" />
+          <Course slug="2" />
+          <Course slug="3" />
+          <Course slug="4" />
         </div>
         <div>
           <HeadingTer className="mb-10 mt-10 md:text-2xl">
             Hindi Courses
           </HeadingTer>
           <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2">
-            <Course />
-            <Course />
-            <Course />
-            <Course />
+            <Course slug="5" />
+            <Course slug="6" />
+            <Course slug="7" />
+            <Course slug="8" />
           </div>
         </div>
       </div>
