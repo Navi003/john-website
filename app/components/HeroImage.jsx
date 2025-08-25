@@ -32,7 +32,7 @@ export default function HeroImage() {
             <div className="grow w-full">
               <Link
                 href="/courses"
-                className="bg-accent px-9 py-1.5 text-gray-lightest text-center block"
+                className="bg-primary-dark px-9 py-1.5 text-gray-lightest text-center block"
               >
                 Courses
               </Link>
@@ -40,7 +40,7 @@ export default function HeroImage() {
             <div className="grow w-full">
               <Link
                 href="/book-course"
-                className="border-2 border-accent  px-9 py-1.5  block text-center"
+                className="border-2 border-primary-dark  px-9 py-1.5  block text-center "
               >
                 Free trail lession
               </Link>
